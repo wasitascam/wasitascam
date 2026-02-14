@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Message Checklist — WasItAScam.com</title>
+  <meta name="description" content="Got a suspicious text message? Answer these questions to find out if it's a scam.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="WasItAScam.com home">WasItAScam</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="phone.html">Phone</a>
+        <a href="text.html" aria-current="page">Text</a>
+        <a href="email.html">Email</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      Text Message Checklist
+    </nav>
+
+    <div class="page-header">
+      <h1>Was that text message a scam?</h1>
+      <p>Got a suspicious text? Let's check if it's real. Answer these questions — and remember, it's always better to be safe than sorry.</p>
+    </div>
+
+    <form id="checklist-form" aria-label="Text message scam checklist">
+      <ul class="checklist" role="list">
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q1">
+            <span class="checklist-label">
+              <strong>Did the message come from a number you don't recognize?</strong>
+              <span>Or a short code or weird-looking number you've never seen before.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q2">
+            <span class="checklist-label">
+              <strong>Does it claim to be from a company or government agency?</strong>
+              <span>Banks, delivery services (UPS, FedEx, USPS), IRS, Social Security, or well-known companies.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q3">
+            <span class="checklist-label">
+              <strong>Is there a link they want you to click?</strong>
+              <span>Scam texts almost always include a link. Real companies rarely text you links out of the blue.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q4">
+            <span class="checklist-label">
+              <strong>Does the link look strange?</strong>
+              <span>Misspellings, extra words, or a web address that doesn't match the company (for example, "usps-delivery-update.com" instead of "usps.com").</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q5">
+            <span class="checklist-label">
+              <strong>Is there urgency or a threat?</strong>
+              <span>"Your package will be returned," "Your account is locked," or "Respond within 24 hours."</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q6">
+            <span class="checklist-label">
+              <strong>Are they asking for personal information?</strong>
+              <span>Real companies won't ask for your Social Security number, password, or bank details by text.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q7">
+            <span class="checklist-label">
+              <strong>Is the message about something you didn't do?</strong>
+              <span>If you didn't order a package, that "delivery notification" is fake. If you didn't contact your bank, that "fraud alert" is suspicious.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q8">
+            <span class="checklist-label">
+              <strong>Does something feel off?</strong>
+              <span>Trust your instincts. You know when something doesn't seem right.</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </form>
+
+    <section class="results" aria-live="polite">
+      <div class="results-counter">
+        You answered "yes" to <strong id="yes-count">0</strong> out of 8 questions
+      </div>
+
+      <div id="result-safe" class="result-level result-safe">
+        <h3>Probably legitimate</h3>
+        <p>This text seems okay. But as a general rule, never click links in text messages — go to the company's website directly by typing the address yourself.</p>
+      </div>
+
+      <div id="result-caution" class="result-level result-caution">
+        <h3>Be cautious</h3>
+        <p>This could go either way. If you think the message might be real, go directly to the company's website by typing the address yourself, or call them using a number you trust. <strong>Don't</strong> click any links in the text.</p>
+      </div>
+
+      <div id="result-scam" class="result-level result-likely-scam">
+        <h3>This is very likely a scam</h3>
+        <p><strong>Do not click any links.</strong> Delete the message and block the number. You did the right thing by checking here first.</p>
+      </div>
+    </section>
+
+    <section class="next-steps">
+      <h2>What to do now</h2>
+
+      <div class="step-card">
+        <h3>If you didn't click anything</h3>
+        <p>You're safe! Delete the text and block the number. Well done.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you clicked a link but didn't enter information</h3>
+        <p>You're probably fine. Close the page and clear your browser history if you'd like extra peace of mind.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you entered personal information</h3>
+        <p>Take a breath — there are steps you can take right now to protect yourself. <a href="personal-info.html">Here's what to do</a>.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you entered payment information</h3>
+        <p>Contact your bank immediately using the number on the back of your card. <a href="sent-money.html">See our full guide</a>.</p>
+      </div>
+    </section>
+
+    <section class="reassurance">
+      <p><strong>You were smart to look this up.</strong> Scam texts are designed to look convincing — checking is always the right call.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="https://buymeacoffee.com" class="coffee-link" target="_blank" rel="noopener noreferrer">
+        &#9749; Buy me a coffee
+      </a>
+      <div class="footer-links">
+        <a href="about.html">About this site</a>
+        <a href="personal-info.html">I gave personal info</a>
+        <a href="sent-money.html">I sent money</a>
+      </div>
+      <p>&copy; 2025 WasItAScam.com &mdash; Free forever. No ads, no data collection.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('checklist-form');
+      var checkboxes = form.querySelectorAll('input[type="checkbox"]');
+      var countEl = document.getElementById('yes-count');
+      var resultSafe = document.getElementById('result-safe');
+      var resultCaution = document.getElementById('result-caution');
+      var resultScam = document.getElementById('result-scam');
+
+      function update() {
+        var count = 0;
+        checkboxes.forEach(function (cb) {
+          var item = cb.closest('.checklist-item');
+          if (cb.checked) {
+            count++;
+            item.classList.add('checked');
+          } else {
+            item.classList.remove('checked');
+          }
+        });
+        countEl.textContent = count;
+
+        resultSafe.classList.remove('active');
+        resultCaution.classList.remove('active');
+        resultScam.classList.remove('active');
+
+        if (count === 0) {
+          resultSafe.classList.add('active');
+        } else if (count === 1) {
+          resultCaution.classList.add('active');
+        } else {
+          resultScam.classList.add('active');
+        }
+      }
+
+      checkboxes.forEach(function (cb) {
+        cb.addEventListener('change', update);
+      });
+
+      update();
+    })();
+  </script>
+</body>
+</html>

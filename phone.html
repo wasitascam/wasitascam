@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Call Checklist — WasItAScam.com</title>
+  <meta name="description" content="Just got off a call that felt weird? Answer these questions to find out if it was a scam.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="WasItAScam.com home">WasItAScam</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="phone.html" aria-current="page">Phone</a>
+        <a href="text.html">Text</a>
+        <a href="email.html">Email</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      Phone Call Checklist
+    </nav>
+
+    <div class="page-header">
+      <h1>Was that phone call a scam?</h1>
+      <p>Just got off a call that felt weird? Answer these questions honestly — scammers are good at what they do, and there's no shame in double-checking.</p>
+    </div>
+
+    <form id="checklist-form" aria-label="Phone call scam checklist">
+      <ul class="checklist" role="list">
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q1">
+            <span class="checklist-label">
+              <strong>Did they contact you first?</strong>
+              <span>You didn't initiate this call — they called you, or they asked you to call a number they provided.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q2">
+            <span class="checklist-label">
+              <strong>Did they claim to be from a trusted organization?</strong>
+              <span>Like a government agency (IRS, Social Security, Medicare), your bank, a tech company (Microsoft, Apple), a utility company, or law enforcement.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q3">
+            <span class="checklist-label">
+              <strong>Did they create urgency or fear?</strong>
+              <span>Phrases like: "Act now," "Your account will be closed," "You'll be arrested," "This is time-sensitive," or "Don't hang up."</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q4">
+            <span class="checklist-label">
+              <strong>Did they ask you to pay in an unusual way?</strong>
+              <span>Gift cards, wire transfers, cryptocurrency, Zelle or Venmo to a stranger, or cash pickup. Real organizations don't ask for these.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q5">
+            <span class="checklist-label">
+              <strong>Did they ask for sensitive information?</strong>
+              <span>Social Security number, bank account numbers, passwords, PINs, or login codes — especially since they called you.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q6">
+            <span class="checklist-label">
+              <strong>Did they tell you to keep the call secret?</strong>
+              <span>"Don't tell your family," "Don't talk to your bank," or "Stay on the line while you go to the store."</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q7">
+            <span class="checklist-label">
+              <strong>Did the caller ID seem off — or too perfect?</strong>
+              <span>Caller ID can be faked. Seeing "IRS" or your bank's name on the screen doesn't mean it's actually them.</span>
+            </span>
+          </label>
+        </li>
+        <li class="checklist-item">
+          <label class="checklist-question">
+            <input type="checkbox" name="q8">
+            <span class="checklist-label">
+              <strong>Did something just feel wrong?</strong>
+              <span>Trust your gut. If you're here checking, something felt off — and that matters.</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </form>
+
+    <section class="results" aria-live="polite">
+      <div class="results-counter">
+        You answered "yes" to <strong id="yes-count">0</strong> out of 8 questions
+      </div>
+
+      <div id="result-safe" class="result-level result-safe">
+        <h3>Probably legitimate</h3>
+        <p>Based on your answers, this call seems okay. But it's always fine to hang up and call the organization back directly using a number from their official website — just to be sure.</p>
+      </div>
+
+      <div id="result-caution" class="result-level result-caution">
+        <h3>Be cautious</h3>
+        <p>This might be okay, but it's worth verifying. Call the organization directly using a phone number from their official website — <strong>not</strong> a number the caller gave you. When in doubt, ask someone you trust.</p>
+      </div>
+
+      <div id="result-scam" class="result-level result-likely-scam">
+        <h3>This was very likely a scam</h3>
+        <p>Multiple signs point to this being a scam. <strong>Don't feel bad</strong> — these people do this for a living. The important thing is you're checking now. See the steps below for what to do next.</p>
+      </div>
+    </section>
+
+    <section class="next-steps">
+      <h2>What to do now</h2>
+
+      <div class="step-card">
+        <h3>If you gave no information or money</h3>
+        <p>You're okay! Block the number and move on. You handled it well.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you shared personal information</h3>
+        <p>Don't panic — there are steps you can take to protect yourself. <a href="personal-info.html">See our step-by-step guide</a>.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you sent money</h3>
+        <p>Act quickly — some payments can be reversed. <a href="sent-money.html">Here's what to do right now</a>.</p>
+      </div>
+
+      <div class="step-card">
+        <h3>If you're still not sure</h3>
+        <p>Call someone you trust — a family member, a friend, your bank directly, or the real organization using a number from their official website. There's no shame in getting a second opinion.</p>
+      </div>
+    </section>
+
+    <section class="reassurance">
+      <p><strong>Remember:</strong> Checking was the smart thing to do. Scammers are professionals, and even the savviest people get targeted.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="https://buymeacoffee.com" class="coffee-link" target="_blank" rel="noopener noreferrer">
+        &#9749; Buy me a coffee
+      </a>
+      <div class="footer-links">
+        <a href="about.html">About this site</a>
+        <a href="personal-info.html">I gave personal info</a>
+        <a href="sent-money.html">I sent money</a>
+      </div>
+      <p>&copy; 2025 WasItAScam.com &mdash; Free forever. No ads, no data collection.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('checklist-form');
+      var checkboxes = form.querySelectorAll('input[type="checkbox"]');
+      var countEl = document.getElementById('yes-count');
+      var resultSafe = document.getElementById('result-safe');
+      var resultCaution = document.getElementById('result-caution');
+      var resultScam = document.getElementById('result-scam');
+
+      function update() {
+        var count = 0;
+        checkboxes.forEach(function (cb) {
+          var item = cb.closest('.checklist-item');
+          if (cb.checked) {
+            count++;
+            item.classList.add('checked');
+          } else {
+            item.classList.remove('checked');
+          }
+        });
+        countEl.textContent = count;
+
+        resultSafe.classList.remove('active');
+        resultCaution.classList.remove('active');
+        resultScam.classList.remove('active');
+
+        if (count === 0) {
+          resultSafe.classList.add('active');
+        } else if (count === 1) {
+          resultCaution.classList.add('active');
+        } else {
+          resultScam.classList.add('active');
+        }
+      }
+
+      checkboxes.forEach(function (cb) {
+        cb.addEventListener('change', update);
+      });
+
+      update();
+    })();
+  </script>
+</body>
+</html>
